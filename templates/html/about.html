@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html> 
+<html lang="ru"> 
+  <head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href={% static 'img/fav/favicon.img' %} type="image">
+    <link rel="apple-touch-icon" sizes="180x180" href={% static 'img/fav/apple-touch-icon.png' %}>
+    <link rel="icon" type="image/png" sizes="32x32" href={% static 'img/fav/favicon-32x32.png' %}>
+    <link rel="icon" type="image/png" sizes="16x16" href={% static 'img/fav/favicon-16x16.png' %}>
+    <link rel="stylesheet" href={% static 'css/bootstrap.min.css' %}>
+    <title>О проекте</title>
+  </head>
+  <body>	   
+{% include 'includes/header.html' %}
+    <main>
+      <div class="container py-5">                        
+        <h1>О проекте</h1>
+          <p>
+            <strong>Relax2026</strong> — это тихая гавань среди бескрайнего космоса для тех, кто не боится созидать. 
+            Это сообщество исследователей, где грань между личным бортовым журналом и искренней поддержкой на расстоянии миллионов километров стирается навсегда.
+          </p>
+          <p>
+            Поддержка единомышленников и хроники первооткрывателей — вот фундамент нашего узла связи. 
+            Здесь вы найдете тысячи потоков данных на любые темы: от терраформирования и квантовой физики до космической моды, кибер-литературы и футуристичного дизайна. Всё, чем живет человечество в новой эре, отражено в наших архивах.
+          </p>
+          <p>
+            Творческий поиск в условиях невесомости, многогранность опыта и абсолютная свобода самовыражения — это те сигналы, 
+            которые объединяют пользователей нашей станции в единую сеть.
+          </p>
+      </div>
+    </main>
+{% include 'includes/footer.html' %}
+  </body>
+</html>
